@@ -15,7 +15,7 @@ app.locals.title = 'Publications';
 
 app.get('/', (req, res) => res.send('Hello Publications!'));
 
-app.listen(app,get('port'), () => {
+app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
 
